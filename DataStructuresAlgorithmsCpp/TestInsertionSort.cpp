@@ -3,7 +3,6 @@
 //  DataStructuresAlgorithmsCpp
 //
 //  Created by Nicholas Ruta on 7/29/16.
-//  Copyright © 2016 Nicholas Ruta. All rights reserved.
 //
 #include <stdio.h>
 #include <iostream>
