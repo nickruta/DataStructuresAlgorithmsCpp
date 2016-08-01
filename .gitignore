@@ -27,3 +27,7 @@
 *.exe
 *.out
 *.app
+
+#XCode Specific files 
+*.xcodeproj
+DerivedData/
