@@ -90,18 +90,18 @@ template <typename E> void SinglyLinkedList<E>::removeFront() {
 }
 
 // test the singly linked list and print object type
-int main() {
-
-    // list of strings
-    SinglyLinkedList<std::string> a;
-    a.addFront("MSP");
-
-    // list of integers
-    SinglyLinkedList<int> b;
-    b.addFront(13);
-    
-    cout << typeid(a).name() << endl;
-
-    // successful execution
-    return EXIT_SUCCESS;
-}
+//int main() {
+//
+//    // list of strings
+//    SinglyLinkedList<std::string> a;
+//    a.addFront("MSP");
+//
+//    // list of integers
+//    SinglyLinkedList<int> b;
+//    b.addFront(13);
+//    
+//    cout << typeid(a).name() << endl;
+//
+//    // successful execution
+//    return EXIT_SUCCESS;
+//}
