@@ -4,6 +4,9 @@
 //
 //  Created by Nicholas Ruta on 8/1/16.
 //
+/*
+ The doubly linked list is a type of linked list that allows us to go in both directions, forward and revers, in a linked list. Each node has a pointer to the node before and after it allowing this traversal. 
+*/
 
 #include <stdio.h>
 #include <iostream>
@@ -20,8 +23,6 @@ private:
     DoublyLinkedListNode* next;				// next node in list
     friend class DoublyLinkedList;			// allow DoublyLinkedList access
 };
-
-
 
 class DoublyLinkedList {
 public:
@@ -43,16 +44,12 @@ protected:
     void remove(DoublyLinkedListNode* v);                   // remove node v
 };
 
-
-
-
 DoublyLinkedList::DoublyLinkedList() {              // constructor
     header = new DoublyLinkedListNode;				// create sentinels
     trailer = new DoublyLinkedListNode;
     header->next = trailer;                         // have them point to each other
     trailer->prev = header;
 }
-
 
 DoublyLinkedList::~DoublyLinkedList() {			// destructor
     while (!empty()) removeFront();             // remove all but sentinels
@@ -103,7 +100,6 @@ const Elem& DoublyLinkedList::front() const	// get front element
 const Elem& DoublyLinkedList::back() const		// get back element
 { return trailer->prev->elem; }
 
-
 // test the singly linked list and print object type
 //int main() {
 // 
@@ -111,7 +107,7 @@ const Elem& DoublyLinkedList::back() const		// get back element
 //    DoublyLinkedList a;
 //    a.addFront("FirstLink");
 //    
-//    // list of integers
+//    // list of strings
 //    DoublyLinkedList b;
 //    b.addFront("AnotherFirstLink");
 //    

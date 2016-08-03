@@ -4,6 +4,9 @@
 //
 //  Created by Nicholas Ruta on 8/1/16.
 //
+/*
+ The linked list is a collection of nodes that together forma a linear ordering. Each node stores a pointer, called next, to the next node of the list. 
+*/
 
 #include <stdio.h>
 #include <iostream>
