@@ -100,6 +100,22 @@ const Elem& DoublyLinkedList::front() const	// get front element
 const Elem& DoublyLinkedList::back() const		// get back element
 { return trailer->prev->elem; }
 
+
+// reversing a doubly linked list
+void listReverse(DoublyLinkedList& L) {
+    DoublyLinkedList T;				// temporary list
+    while (!L.empty()) {			// reverse L into T
+        std::string s = L.front();
+        L.removeFront();
+        T.addFront(s);
+    }
+    while (!T.empty()) {			// copy T back to L
+        std::string s = T.front();
+        T.removeFront();
+        L.addBack(s);
+    }
+}
+
 // test the singly linked list and print object type
 //int main() {
 // 
@@ -110,6 +126,8 @@ const Elem& DoublyLinkedList::back() const		// get back element
 //    // list of strings
 //    DoublyLinkedList b;
 //    b.addFront("AnotherFirstLink");
+//    
+//    listReverse(b);
 //    
 //    cout << typeid(a).name() << endl;
 //    
