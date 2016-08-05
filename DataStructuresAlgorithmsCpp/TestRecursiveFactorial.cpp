@@ -26,7 +26,7 @@ int BinaryFibonacci(int k) {
     }
 }
 
-int main () {
-    cout << "5! - " << recursiveFactorial(5) << endl;
-    cout << "Sixth value in the Fibonacci Sequence (1 1 2 3 5 8) - " << BinaryFibonacci(6) << endl;
-}
+//int main () {
+//    cout << "5! - " << recursiveFactorial(5) << endl;
+//    cout << "Sixth value in the Fibonacci Sequence (1 1 2 3 5 8) - " << BinaryFibonacci(6) << endl;
+//}
