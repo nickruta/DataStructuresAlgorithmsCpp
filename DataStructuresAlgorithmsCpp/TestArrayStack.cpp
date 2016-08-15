@@ -68,11 +68,11 @@ void ArrayStack<E>::pop() throw(StackEmpty) {
         --t;
 }
 
-int main () {
-    ArrayStack<int> A;                      // A = [], size = 0
-    A.push(7);                              // A = [7*], size = 1
-    A.push(13);                             // A = [7, 13*], size = 2
-    cout << A.top() << endl;  A.pop();		// A = [7*], outputs: 13
-    A.push(9);                              // A = [7, 9*], size = 2
-    cout << A.top() << endl;                // A = [7, 9*], outputs: 9
-}
+//int main () {
+//    ArrayStack<int> A;                      // A = [], size = 0
+//    A.push(7);                              // A = [7*], size = 1
+//    A.push(13);                             // A = [7, 13*], size = 2
+//    cout << A.top() << endl;  A.pop();		// A = [7*], outputs: 13
+//    A.push(9);                              // A = [7, 9*], size = 2
+//    cout << A.top() << endl;                // A = [7, 9*], outputs: 9
+//}
